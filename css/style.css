@@ -1,9 +1,42 @@
 * {
   font-family: "montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-inicio img {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-aceites img {
+  width: 25px;
+  height: 25px;
+}
+.icon-filtros img {
+  width: 25px;
+  height: 25px;
+}
+.icon-repuestos img {
+  width: 25px;
+  height: 25px;
+}
+.icon-fluidos img {
+  width: 25px;
+  height: 25px;
+}
+.icon-neumaticos img {
+  width: 25px;
+  height: 25px;
+}
+
+.navbar222 a {
+  font-size: 18px;
 }
 
 .menu {
-  background: linear-gradient(to right, #b33c52cb, hsl(349, 74%, 59%));
+  background: linear-gradient(to right, #e21c40cb, #e44965);
 }
 
 .buscar {
@@ -30,6 +63,10 @@
     justify-content: center;
   }
 
+  .principalContacto {
+    width: 100%;
+  }
+
   .slogan {
     text-align: right;
   }
@@ -39,7 +76,7 @@
     text-align: center;
     background: white;
     justify-content: center;
-    padding-right: 5rem;
+    width: 100%;
   }
 
   .carousel {
@@ -53,13 +90,16 @@
   .subtitle {
     font-size: small;
   }
-  .bienvenido {
-    background-color: white;
-  }
-  .bienvenido2 {
-    background-color: #7c878d2f;
-    text-align: center;
+
+  .historia {
     justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 20rem;
+  }
+
+  .expand {
+    width: 100%;
   }
 
   .contacto,
@@ -67,6 +107,11 @@
   .escribenos,
   .navinicial {
     display: none;
+  }
+  .bienvenido {
+    background-color: #7c878d2f;
+    text-align: center;
+    justify-content: center;
   }
 }
 
@@ -76,14 +121,12 @@
   .repuestos,
   .neumaticos,
   .fluidos,
-  .donde_encontrarnos {
+  .donde_encontrarnos,
+  .inicio {
     visibility: hidden;
     display: none;
   }
-  .principal1 {
-    columns: 1;
-    text-align: center;
-  }
+
   .carousel {
     justify-content: center;
   }
@@ -100,7 +143,39 @@
 
   .izq {
     display: none;
+    overflow: hidden;
+    visibility: hidden;
   }
+
+  .fixed {
+    position: fixed;
+  }
+
+  .navbar2 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar222 {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .carouselPadre {
+    overflow: hidden;
+    display: contents;
+  }
+}
+
+.quienes_somos {
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: bold;
+  font-weight: bold;
+}
+
+.quienes_somos_historia {
+  font-size: 1.3rem;
 }
 
 .grey {
@@ -121,10 +196,29 @@
   overflow: hidden;
 }
 
-footer {
-  background: rgb(244, 211, 58);
+.oleajeFooter {
+  opacity: 1;
+  background: linear-gradient(
+    270deg,
+    #ff0037,
+    rgba(0, 0, 0, 1),
+    rgba(0, 196, 222, 1)
+  );
+  margin: 0;
   padding: 0;
-  width: 200vw;
+  border: 0;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.footerComleto {
+  width: 0;
+  max-width: 100%;
+}
+
+footer {
+  background: #f4d33a;
+  padding: 0 0 5rem 0;
   max-width: 102%;
   justify-content: center;
 }
@@ -132,7 +226,8 @@ footer {
 .footer__title {
   justify-content: center;
   text-align: center;
-  margin-bottom: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 .footer__nav {
@@ -154,14 +249,16 @@ footer {
   overflow: hidden;
 }
 
+/* NEW FOOTER */
+
 /* ESTILOS PRODUCTOS GRID */
 
-* {
-  box-sizing: border-box;
-}
-
-body {
+main {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
 }
 
 section {
@@ -194,13 +291,123 @@ article button {
   cursor: pointer;
 }
 
-.header2,
+.henkei_logo img {
+  width: 100%;
+}
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #fafafa;
+  width: 100%;
+  min-width: 100vw;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.waving {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(60deg, #f5002d 100%, #f4d33a 100%);
+  color: white;
+}
+.logo {
+  width: 50px;
+  fill: white;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inner- {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* cartel */
+.cartel,
 .masthead {
   position: relative;
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  background: linear-gradient(to right, #f4d33a, hsl(49, 89%, 59%));
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -211,6 +418,7 @@ header.masthead .masthead-content {
   position: relative;
 }
 header.masthead .masthead-content .masthead-heading {
+  color: black;
   font-size: 4rem;
 }
 header.masthead .masthead-content .masthead-subheading {
@@ -239,4 +447,365 @@ header.masthead .bg-circle-3 {
   width: 20rem;
   bottom: -10rem;
   right: 5%;
+}
+
+.sizefoto {
+  height: 150px;
+  width: 150px;
+}
+
+.suscribete {
+  justify-content: center;
+  text-align: center;
+}
+
+/* FORMULARIO ESCRIBENOS */
+.main__form {
+  background-color: #e5e5f7;
+  background: linear-gradient(
+    270deg,
+    #ff0037,
+    rgba(0, 0, 0, 1),
+    rgba(0, 196, 222, 1)
+  );
+  display: flex;
+  min-height: 100vh;
+}
+
+.form {
+  background-color: white;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 4.5rem 6em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+  text-align: center;
+}
+
+.form__title {
+  font-size: 1.9rem;
+  margin-bottom: 0.5em;
+}
+
+.form__paragraph {
+  font-weight: 300;
+}
+
+.form__link {
+  font-weight: 400;
+  color: black;
+}
+
+.form__container {
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+}
+
+.form__group {
+  position: relative;
+  --color: #5757577e;
+}
+
+.form__input {
+  width: 100%;
+  background: none;
+  color: #706c6c;
+  font-size: 1rem;
+  padding: 0.6em 0.3;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: #3866f2;
+}
+
+.form__label {
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transform: transform 0.5s, color 0.3s;
+}
+
+.form__submit {
+  background: #3866f2;
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 0.5em;
+}
+
+.form__line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #3866f2;
+  transform: scale(0);
+  transform: left bottom;
+}
+
+.form__input:focus + .form__line,
+.form__input:not(:placeholder-shown) + .form__line {
+  transform: scale(1);
+}
+
+.sidebar_flex {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.sidebar_icons {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.sidebar_text {
+  font-size: 17px;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* GALLERY */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+  /* Base font size */
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.heading {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: #1a1a1a;
+}
+
+.heading span {
+  display: block;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  /* Compensate for excess margin on outer gallery flex items */
+  margin: -1rem -1rem;
+}
+
+.gallery-item {
+  /* Minimum width of 24rem and grow to fit available space */
+  flex: 1 0 24rem;
+  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
+}
+
+/* NEW FOOTAH */
+
+.oleaje {
+  opacity: 1;
+  background: white;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+.oleajeFooter {
+  opacity: 1;
+  background: linear-gradient(
+    270deg,
+    #ff0037,
+    rgba(0, 0, 0, 1),
+    rgba(0, 196, 222, 1)
+  );
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.footerComleto {
+  width: 0;
+  max-width: 100%;
+}
+
+footer {
+  background: #f4d33a;
+  padding: 0 0 5rem 0;
+  max-width: 102%;
+  justify-content: center;
+}
+
+.footer__title {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footer__nav {
+  justify-content: center;
+  list-style: none;
+  overflow: hidden;
+  display: inline-flex;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+.footer__nav .footer__link {
+  text-align: center;
+  justify-content: center;
+  min-width: 20%;
+  width: 20%;
+  height: 75%;
+  overflow: hidden;
+}
+
+.footah {
+  display: flex;
+  justify-content: center;
+}
+
+.footah .footah_link {
+  list-style: none;
+}
+
+.footah .footah_link a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.footah .footah_link a .icon {
+  position: relative;
+  color: #f5002d;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.footah .footah_link a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.footah .footah_link a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.footah .footah_link a:hover:before {
+  top: 0;
+}
+
+.footah .footah_link:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+.footah .footah_link:nth-child(2) a:before {
+  background: #55acee;
+}
+
+.footah .footah_link:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+.footah .footah_link:nth-child(4) a:before {
+  background: #dd4b39;
+}
+
+.heading-line::before {
+  content: "";
+  width: 13.5rem;
+  height: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #f5002d;
+}
+
+.minimo {
+  width: 100vw;
+  min-width: 100%;
 }
