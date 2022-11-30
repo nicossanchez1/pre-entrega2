@@ -40,7 +40,7 @@
 }
 
 .buscar {
-  background: linear-gradient(to right, #f4d33a, hsl(49, 89%, 59%));
+  background: linear-gradient(to right, #ffd000, #ffd000);
 }
 
 .burger {
@@ -53,6 +53,14 @@
 
 .insumos {
   color: white;
+}
+
+::after {
+  color: black;
+}
+
+.mini_boton {
+  background-color: ;
 }
 
 @media (max-width: 768px) {
@@ -105,6 +113,11 @@
   .contacto,
   .navbar-nav .ubicacion,
   .escribenos,
+  .aceites,
+  .fluidos,
+  .neumaticos,
+  .filtros,
+  .repuestos,
   .navinicial {
     display: none;
   }
@@ -139,12 +152,6 @@
 
   .miPosition {
     height: 50%;
-  }
-
-  .izq {
-    display: none;
-    overflow: hidden;
-    visibility: hidden;
   }
 
   .fixed {
@@ -217,7 +224,7 @@
 }
 
 footer {
-  background: #f4d33a;
+  background: #ffd000;
   padding: 0 0 5rem 0;
   max-width: 102%;
   justify-content: center;
@@ -302,7 +309,7 @@ body {
   min-height: 100vh;
   background-color: #fafafa;
   width: 100%;
-  min-width: 100vw;
+  min-width: 420px;
 }
 
 p {
@@ -315,7 +322,7 @@ p {
 .waving {
   position: relative;
   text-align: center;
-  background: linear-gradient(60deg, #f5002d 100%, #f4d33a 100%);
+  background: linear-gradient(60deg, #f5002d 100%, #ffd000 100%);
   color: white;
 }
 .logo {
@@ -407,7 +414,7 @@ p {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(to right, #f4d33a, hsl(49, 89%, 59%));
+  background: linear-gradient(to right, #ffd000, #f3d139);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -696,7 +703,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 
 footer {
-  background: #f4d33a;
+  background: #ffd000;
   padding: 0 0 5rem 0;
   max-width: 102%;
   justify-content: center;
