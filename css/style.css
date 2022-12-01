@@ -5,9 +5,18 @@
   padding: 0;
 }
 
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #fafafa;
+  width: 100%;
+  min-width: 420px;
+}
+
 .icon-inicio img {
   width: 25px;
   height: 25px;
+  background: none;
 }
 
 .icon-aceites img {
@@ -36,7 +45,7 @@
 }
 
 .menu {
-  background: linear-gradient(to right, #e21c40cb, #e44965);
+  background: linear-gradient(to right, #f5002d, #e44965);
 }
 
 .buscar {
@@ -44,11 +53,12 @@
 }
 
 .burger {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%30' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%30' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .navbar-toggler {
-  border: 1px solid black;
+  border: 1.9px solid black;
+  margin: 0 0.5rem 0 0;
 }
 
 .insumos {
@@ -57,10 +67,6 @@
 
 ::after {
   color: black;
-}
-
-.mini_boton {
-  background-color: ;
 }
 
 @media (max-width: 768px) {
@@ -168,10 +174,27 @@
     text-align: center;
   }
 
+  .sidebar_icons.img1 {
+  }
+
   .carouselPadre {
-    overflow: hidden;
     display: contents;
   }
+}
+
+.donde_encontrarnos {
+  justify-content: center;
+  text-align: center;
+}
+
+.mini_boton {
+  background-color: #ffd000;
+  margin: 0 15rem;
+  padding: 0;
+  border-radius: 30px;
+  max-width: 100%;
+  opacity: 1;
+  height: 14.3px;
 }
 
 .quienes_somos {
@@ -298,20 +321,6 @@ article button {
   cursor: pointer;
 }
 
-.henkei_logo img {
-  width: 100%;
-}
-
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  background-color: #fafafa;
-  width: 100%;
-  min-width: 420px;
-}
-
 p {
   font-family: "Lato", sans-serif;
   letter-spacing: 1px;
@@ -346,6 +355,10 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.nico {
+  color: #e21c40cb;
 }
 
 .waves {
@@ -571,10 +584,13 @@ header.masthead .bg-circle-3 {
 
 .sidebar_flex {
   display: flex;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  width: 100%;
+}
+
+.sidebar_flex:hover {
+  background-color: #ffd000;
+  width: 100vw;
+  max-width: 100%;
 }
 
 .sidebar_icons {
@@ -583,8 +599,9 @@ header.masthead .bg-circle-3 {
 }
 
 .sidebar_text {
-  font-size: 17px;
+  font-size: 15px;
   margin: 0;
+  padding: 0;
   font-weight: bold;
 }
 
@@ -816,3 +833,5 @@ footer {
   width: 100vw;
   min-width: 100%;
 }
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
